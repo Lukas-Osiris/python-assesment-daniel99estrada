@@ -1,0 +1,20 @@
+print("To sign up type in your user username.")
+User1= input("username:")
+print("Now type your password")
+Pass1= input("password:")
+print("now to login type in your username")
+pUser= input("username:")
+print("now put in your password")
+pPass = input("password:")
+counter = 0
+while counter < 3:
+     if pUser == User1 and pPass == Pass1:
+       print("your now logged in")
+       break
+     else:
+        counter+=1 
+        print(" access denied, try again")
+        print("now to login type in your username")
+        pUser= input("username:")
+        print("now put in your password")
+        pPass = input("password:")
